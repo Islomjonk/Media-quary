@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.title{
+    text-align: center;
+    font-size: 50px;
+}
+.mobile{
+    background-color: crimson;
+    color:#fff;
+    text-align: center;
+    display: none;
+}
+.banner{
+    width: 100%;
+    height: 500px;
+    background: url("./4ae46ab86c387180334042fc7015bb0e.jpeg") no-repeat center/cover;
+}
+nav{
+    width: 100%;
+    height: 80px;
+    background:dodgerblue;
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+    ;
+    color: #fff;
+}
+.collection{
+    display: flex;
+    list-style: none;
+}
+.item{
+    margin-left: 50px;
+}
+.menu{
+    display: none;
+}
+.menu p{
+    width: 26px;
+    height: 3px;
+     background-color: #fff;
+     margin-bottom:3px ;
+     border-radius: 4px;}
+.container{
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+}
+.text{
+    width: 50%;
+}
+.text h1{
+    text-align: left;
+}
+.text p{
+    padding: 20px 0;
+    color: rgb(66, 65, 65);
+    font-size: 20px;
+    line-height: 1.5;
+}
+.text button{
+    padding: 10px 30px ;
+    background: dodgerblue;
+    color: #fff;
+    border: none;
+}
+.img{
+    width: 50%;
+    height: 400px;
+    background: url("./195885_download-wallpapers-fruits-fresh-water-drops-spray-avocado_2560x1600_h.jpg") no-repeat center/cover;
+}
+.grid{
+    width: 80%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+.card{
+    padding: 16px;
+    box-shadow: 0 0 10px #0003;
+}
+.card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* for planshet */
+@media screen and (max-width:990px){
+    .title{
+        font-size: 30px;
+        color: red;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .img,
+    .text{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/* for mobile */
+@media screen and (max-width:600px){
+    .title{
+        font-size: 20px;
+        color: dodgerblue;
+    }
+    .mobile{
+        display: block;
+    }
+    .banner{
+        background: url("./1651225282_73-vsegda-pomnim-com-p-dragon-frukt-foto-75.jpg") no-repeat center/cover;
+    }
+    .collection{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .grid{
+        grid-template-columns: 1fr;
+    }
+}
